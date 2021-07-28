@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: url('https://www.pngarts.com/files/7/Update-Button-PNG-Image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: black;
+  background-repeat: no-repeat;
+}
+
+#date {
+  font-size: 4rem;
+}
+
+#time {
+  font-size: 6rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+  #time,
+  #date {
+    font-size: 3rem;
+  }
+}
+
+.block {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  width: 280px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.block > button {
+  bottom: -65px;
+}
+
+figcaption {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.weather {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 500px;
+}
+
+.text > span {
+  display: block;
+}
+
+#location {
+  width: 100%;
+}
+#temperature {
+  margin: auto;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.weather > img {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+}
